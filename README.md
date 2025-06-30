@@ -29,7 +29,7 @@ PRACTICO FINAL DE MARTINA VIDAL, MATIAS NOVOA, NATALIA MUÑOZ
 - Agregamos productos a la página web según requiera cada ítem.
 - Agregamos botones para poder agregarlos al carrito.
 
-  **AGREGAMOS UNA SECCIÓN**
+**AGREGAMOS UNA SECCIÓN**
    - Le pondremos por nombre a la sección "PRODUCTOS DESTACADOS DEL MES"
    - Agregaremos 4 productos con su imagen respectiva, precio e infomacion correspondiente.
    --------
@@ -141,12 +141,12 @@ PRACTICO FINAL DE MARTINA VIDAL, MATIAS NOVOA, NATALIA MUÑOZ
     - Instagram.
     - Tiktok.
     - Facebook.
-  - para poder ingresar a nuestra pagina de forma externa a la pagina(solo es de manera visual no funcional.)
+- para poder ingresar a nuestra pagina de forma externa a la pagina(solo es de manera visual no funcional.)
 ------
 - Se crearón 2 secciones en un contenedor
     - Formulario de registro.
     - Formulario de inicio de sesión.
-  **Formulario de inicio de sesión**
+- Formulario de inicio de sesión
     - En esta parte de la sección pediremos los siguientes datos:
       - Correo Electronico.
       - Contraseña.
@@ -159,10 +159,10 @@ PRACTICO FINAL DE MARTINA VIDAL, MATIAS NOVOA, NATALIA MUÑOZ
        - !Hola, amig@s¡
        - Ingrese sus datos personales y comienza el viaje con nosotros.
   - Boton para poder registrarse.
-   - Al apretar el boton registrarse te redigidira a otro bosque donde te permitira incribirse con los siguientes requerimientos:
-   - Nombre
-   - Correo electrónico.
-   - contraseña.
+    - Al apretar el boton registrarse te redigidira a otro bosque donde te permitira incribirse con los siguientes requerimientos:
+      - Nombre
+      - Correo electrónico.
+      - contraseña.
    y estarias con un registro exitoso!!
 ---------------------
 
