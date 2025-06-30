@@ -66,6 +66,7 @@ PRACTICO FINAL DE MARTINA VIDAL, MATIAS NOVOA, NATALIA MUÑOZ
     - Creatinas.
     - barra de busqueda.
     - Y se destaca sección (Vitaminas) para señalarnos en que lugar nos ubicamos.
+
 **AGREGAMOS UNA SECCIÓN**
   - Le pondremos por nombre a la sección "VITAMINAS"
    - Agregaremos 6 productos con su imagen respectiva, precio e        infomacion correspondiente.
@@ -84,6 +85,7 @@ PRACTICO FINAL DE MARTINA VIDAL, MATIAS NOVOA, NATALIA MUÑOZ
     - Creatinas.
     - barra de busqueda.
     - Y se destaca sección (ofertas) para señalarnos en que lugar nos ubicamos.
+
 **AGREGAMOS UNA SECCIÓN**
   - Le pondremos por nombre a la sección "ofertas especiales"
    - Agregaremos 3 productos con su imagen respectiva, precio actual y precio con la oferta y su infomacion correspondiente.
@@ -103,6 +105,7 @@ PRACTICO FINAL DE MARTINA VIDAL, MATIAS NOVOA, NATALIA MUÑOZ
     - Creatinas.
     - barra de busqueda.
     - Y se destaca sección (proteinas) para señalarnos en que lugar nos ubicamos.
+
 **AGREGAMOS UNA SECCIÓN**
   - Le pondremos por nombre a la sección "ofertas especiales"
    - Agregaremos 3 productos con su imagen respectiva, precio actual y su infomacion correspondiente.
@@ -153,7 +156,7 @@ PRACTICO FINAL DE MARTINA VIDAL, MATIAS NOVOA, NATALIA MUÑOZ
       - Opción para recuperación de contraseña.
       - Boton para poder ingresar.
 -----------
-  **Formulario de registro**
+**Formulario de registro**
   - En esta parte de la sección pediremos los siguientes datos:
     - Tendremos un subtitulo con información como:
        - !Hola, amig@s¡
@@ -164,5 +167,7 @@ PRACTICO FINAL DE MARTINA VIDAL, MATIAS NOVOA, NATALIA MUÑOZ
       - Correo electrónico.
       - contraseña.
    y estarias con un registro exitoso!!
+   - Y para dar por finalizado en la parte superior estan los derechos del autor
+   
 ---------------------
 
