@@ -16,13 +16,13 @@ PRACTICO FINAL DE MARTINA VIDAL, MATIAS NOVOA, NATALIA MUÑOZ
 ## Paso a paso para creación visual de Frontend
 
 - Iniciamos la creación de página con Visual Studio Code.
-- Iniciamos la creación de la página web
+- Dato importante: trabajaremos con bootstrap y css.
+------
 
----
-
-## Detalles de las páginas web**
+## Detalles de las páginas web
 
 # index
+-  Utilizamos CSS para la edición de esta pagina web.
 - Creamos un menú para ubicar subcontenidos con nombre: Proteína, Creatinas, Vitaminas y Ofertas.
 - Ubicamos barra de busqueda al inicio-centro de nuestra pagina.
 - Ubicamos en el extremo derecho carrito de compras y un usuario.
@@ -94,7 +94,7 @@ PRACTICO FINAL DE MARTINA VIDAL, MATIAS NOVOA, NATALIA MUÑOZ
 ------
 
 # PROTEINAS
--Utilizamos Bootstrap para la edición de esta pagina web
+- Utilizamos Bootstrap para la edición de esta pagina web
 - Se implemento un contenedor para el logo, menu de navegación con sus respectivos enlaces.
 - Ubicamos en el extremo derecho menú de navegacion que contiene:
     - carrito de compras.
@@ -114,7 +114,7 @@ PRACTICO FINAL DE MARTINA VIDAL, MATIAS NOVOA, NATALIA MUÑOZ
 
 # CREATINAS
 
--Utilizamos Bootstrap para la edición de esta pagina web
+- Utilizamos Bootstrap para la edición de esta pagina web
 - Se implemento un contenedor para el logo, menu de navegación con sus respectivos enlaces.
 - Ubicamos en el extremo derecho menú de navegacion que contiene:
     - carrito de compras.
