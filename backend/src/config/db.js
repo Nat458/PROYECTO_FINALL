@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI, {
+    await mongoose.connect("mongodb://localhost:27017/API_REST_PROYECTO", {
       writeConcern: { w: '1' }, // AP: w:1, CP: w:'majority' //
     });
     console.log('Conectado a MongoDB');

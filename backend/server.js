@@ -6,9 +6,10 @@ const PORT = process.env.PORT || 3000;
 
 // PRIMERO conecta a Mongo, LUEGO inicia el server
 connectDB().then(() => {
-  app.listen(PORT, () => {
-    console.log(`API corriendo en http://localhost:${PORT}`);
-  });
+  app.listen(PORT, '0.0.0.0', () => {
+  console.log(`API corriendo en http://localhost:${PORT}`);
+});
+
 }).catch((err) => {
   console.error('❌ Falló la conexión a MongoDB:', err);
 });

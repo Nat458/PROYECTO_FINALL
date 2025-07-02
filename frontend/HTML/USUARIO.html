@@ -450,16 +450,19 @@
       document.querySelectorAll('.success-message').forEach(e => e.textContent = '');
     }
 
-    // Sign Up form validation y conexión con backend
-signUpForm.addEventListener('submit', function(e) {
+    // Validación Singup (registro) y conexión con backend
+
+  const signUpForm = document.getElementById('signUpForm');
+
+  signUpForm.addEventListener('submit', function(e) {
   e.preventDefault();
   clearMessages();
 
   let valid = true;
 
-  const name = signUpForm.nombre.value.trim();
-  const email = signUpForm.email.value.trim();
-  const password = signUpForm.password.value.trim();
+  const name = document.getElementById('signUpName').value.trim();
+  const email = document.getElementById('signUpEmail').value.trim();  
+  const password = document.getElementById('signUpPassword').value.trim();
 
   if (name === '') {
     document.getElementById('signUpNameError').textContent = 'Por favor, ingresa tu nombre.';
@@ -482,33 +485,42 @@ signUpForm.addEventListener('submit', function(e) {
 
   if (valid) {
 
-    // Enviar datos al backend
-    fetch('http://localhost:3000/api/user', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        nombre: name,
-        correo: email,
-        contraseña: contraseña,
-        esSocio: false, // Puedes modificar según tus reglas
-        direcciones: []
-      })
+// Enviar datos al backend
+
+  const baseURL = window.location.hostname.includes('127.0.0.1') ? 
+  'http://127.0.0.1:3000' : 
+  'http://localhost:3000';
+
+ fetch(`${baseURL}/api/user`, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+
+      nombre: name,
+      correo: email,
+      contrasena: password,
+      esSocio: false,
+      direcciones: []
     })
-    .then(res => res.json())
-    .then(data => {
-      if (data._id) {
-        document.getElementById('signUpSuccess').textContent = '¡Registro exitoso! Ya puedes iniciar sesión.';
-        signUpForm.reset();
-      } else {
-        document.getElementById('signUpEmailError').textContent = data.message || 'Error al registrar.';
-      }
-    })
-    .catch(err => {
-      console.error(err);
-      document.getElementById('signUpEmailError').textContent = 'Error del servidor.';
+  })
+
+  .then(res => res.json())
+  .then(data => {
+    if (data._id) {
+      document.getElementById('signUpSuccess').textContent = '¡Registro exitoso! Ya puedes iniciar sesión.';
+      signUpForm.reset();
+    } else {
+      document.getElementById('signUpEmailError').textContent = data.message || 'Error al registrar.';
+    }
+  })
+
+  .catch(err => {
+    console.error(err);
+    document.getElementById('signUpEmailError').textContent = 'Error del servidor.';
     });
   }
 });
+
 
     // Sign In form validation
     const signInForm = document.getElementById('signInForm');

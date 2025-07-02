@@ -1,11 +1,11 @@
 ### CREAR UN NUEVO USUARIO ###
-POST http://localhost:3000/api/user
+POST 'http://127.0.0.1:3000/api/user'
 Content-Type: application/json
 
 {
   "nombre": "Chanchito Feliz",
   "correo": "chanchito@gmail.com",
-  "contraseña": "supersecreta",
+  "contrasena": "supersecreta",
   "esSocio": true,
   "direcciones": [
     {
