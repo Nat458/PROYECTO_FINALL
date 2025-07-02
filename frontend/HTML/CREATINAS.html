@@ -191,13 +191,25 @@
     actualizarContador();
   }
 
-  function agregarAlCarrito(nombre, precio) {
-    const item = carrito.find(x => x.nombre === nombre);
-    if (item) item.cantidad++;
-    else carrito.push({ nombre, precio, cantidad: 1 });
-    actualizarLista();
-    alert(`🛒 ${nombre} agregado al carrito.`);
+  // Agregar producto al carrito
+   function agregarAlCarrito(nombre, precio) {
+  const usuario = JSON.parse(localStorage.getItem('usuario'));
+
+  if (!usuario) {
+    alert('⚠️ Debes iniciar sesión para agregar productos al carrito.');
+    return;
   }
+
+  const productoExistente = carrito.find(p => p.nombre === nombre);
+  if (productoExistente) {
+    productoExistente.cantidad++;
+  } else {
+    carrito.push({ nombre, precio, cantidad: 1 });
+  }
+
+  actualizarLista();
+  alert(`🛒 ${nombre} agregado al carrito.`);
+}
 
   function eliminar(idx) {
     carrito.splice(idx, 1);
