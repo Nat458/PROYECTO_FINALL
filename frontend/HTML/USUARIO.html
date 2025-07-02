@@ -433,6 +433,8 @@
     const signInButton = document.getElementById('signIn');
     const container = document.getElementById('container');
 
+
+
     signUpButton.addEventListener('click', () => {
       container.classList.add("right-panel-active");
       clearMessages();
@@ -523,6 +525,12 @@
 
 
     // Sign In form validation
+
+    const validateEmail = (email) => {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+};
+
     const signInForm = document.getElementById('signInForm');
     signInForm.addEventListener('submit', function(e) {
       e.preventDefault();
@@ -546,17 +554,33 @@
       }
 
       if (valid) {
-        // Aquí iría la lógica de autenticación
-        document.getElementById('signInSuccess').textContent = '¡Inicio de sesión exitoso!';
-        signInForm.reset();
-      }
-    });
+  const baseURL = window.location.hostname.includes('127.0.0.1') ?
+    'http://127.0.0.1:3000' :
+    'http://localhost:3000';
 
-    // Función simple para validar email
-    function validateEmail(email) {
-      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return re.test(email);
-    }
+  fetch(`${baseURL}/api/auth/login`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ correo: email, contrasena: password })
+  })
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) {
+
+        // Opcional: guardar datos del usuario en localStorage
+        localStorage.setItem('usuario', JSON.stringify(data.user));
+
+        // Redirigir al INDEX
+        window.location.href = 'INDEX.html';
+      } else {
+        document.getElementById('signInPasswordError').textContent = data.message || 'Credenciales incorrectas.';
+      }
+    })
+    .catch(err => {
+      console.error(err);
+      document.getElementById('signInPasswordError').textContent = 'Error del servidor.';
+    });
+}})
   </script>
 
 </body>

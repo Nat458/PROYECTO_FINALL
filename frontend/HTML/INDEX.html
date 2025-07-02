@@ -31,6 +31,10 @@
         </ul>
       </nav>
 
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 20px;">
+  <h2 id="mensaje-bienvenida" style="margin: 0;"></h2>
+  <button id="cerrarSesion" style="padding: 8px 12px;">Cerrar sesión</button>
+</div>
       <div class="header-actions">
         <div class="search-bar">
           <input id="inputBuscar" type="text" placeholder="Buscar productos...">
@@ -62,7 +66,7 @@
           </div>
 
           <div class="product-card">
-            <img src="/IMG/Proteina_Mass.webp" alt="Mass Gainer" />
+            <img src="/frontend/IMG/Proteina_Mass.webp" alt="Mass Gainer" />
             <h3 class="product-name">Mass Gainer</h3>
             <p class="product-desc">Para volumen muscular</p>
             <p class="price">$39.990</p>
@@ -70,7 +74,7 @@
           </div>
 
           <div class="product-card">
-            <img src="/IMG/Proteina_vegana.webp" alt="Proteína Vegana" />
+            <img src="/frontend/IMG/Proteina_vegana.webp" alt="Proteína Vegana" />
             <h3 class="product-name">Proteína Vegana</h3>
             <p class="product-desc">A base de plantas</p>
             <p class="price">$32.500</p>
@@ -78,7 +82,7 @@
           </div>
 
           <div class="product-card">
-            <img src="/IMG/Caseina.webp" alt="Caseína" />
+            <img src="/frontend/IMG/Caseina.webp" alt="Caseína" />
             <h3 class="product-name">Caseína</h3>
             <p class="product-desc">Liberación lenta</p>
             <p class="price">$42.900</p>
@@ -197,16 +201,24 @@
     }
 
     // Agregar producto al carrito
-    function agregarAlCarrito(nombre, precio) {
-      const productoExistente = carrito.find(p => p.nombre === nombre);
-      if (productoExistente) {
-        productoExistente.cantidad++;
-      } else {
-        carrito.push({ nombre, precio, cantidad: 1 });
-      }
-      actualizarLista();
-      alert(`🛒 ${nombre} agregado al carrito.`);
-    }
+   function agregarAlCarrito(nombre, precio) {
+  const usuario = JSON.parse(localStorage.getItem('usuario'));
+
+  if (!usuario) {
+    alert('⚠️ Debes iniciar sesión para agregar productos al carrito.');
+    return;
+  }
+
+  const productoExistente = carrito.find(p => p.nombre === nombre);
+  if (productoExistente) {
+    productoExistente.cantidad++;
+  } else {
+    carrito.push({ nombre, precio, cantidad: 1 });
+  }
+
+  actualizarLista();
+  alert(`🛒 ${nombre} agregado al carrito.`);
+}
 
     // Eliminar producto del carrito
     function eliminar(index) {
@@ -256,6 +268,26 @@
         filtrarProductos();
       });
     });
+
+  // Obtener el usuario desde localStorage
+   const usuario = JSON.parse(localStorage.getItem('usuario'));
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const mensaje = document.getElementById('mensaje-bienvenida');
+    if (usuario && mensaje) {
+      const nombre = usuario.nombre || 'Usuario';
+      mensaje.textContent = `¡Bienvenido, ${nombre}!`;
+    }
+
+    const btnCerrar = document.getElementById('cerrarSesion');
+    if (btnCerrar) {
+      btnCerrar.addEventListener('click', () => {
+        localStorage.removeItem('usuario');
+        window.location.href = 'INDEX.html'; // Redirige al mismo INDEX libre
+      });
+    }
+  });
+
   </script>
 </body>
 </html>

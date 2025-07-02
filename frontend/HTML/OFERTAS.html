@@ -63,10 +63,10 @@
     <!-- Oferta 1 -->
     <div class="col-md-4">
       <div class="card h-100">
-        <img src="/IMG/Proteina_whey.jpg" class="card-img-top" alt="Proteína Whey Oferta">
+        <img src="/frontend/IMG/Proteina_whey.jpg" class="card-img-top" alt="Proteína Whey Oferta">
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">Proteína Whey - 20% OFF</h5>
-          <p class="card-text">908g sabor chocolate milk</p>
+          <p class="card-text">930g sabor vainilla icecream</p>
           <p class="fw-bold text-success"><del>$45.990</del> $36.790</p>
           <button class="btn btn-success mt-auto" onclick="agregarAlCarrito('Proteína Whey Oferta',36790)">Agregar al Carrito</button>
         </div>
@@ -76,7 +76,7 @@
     <!-- Oferta 2 -->
     <div class="col-md-4">
       <div class="card h-100">
-        <img src="/IMG/Multivitaminico.avif" class="card-img-top" alt="Multivitamínico Oferta">
+        <img src="/frontend/IMG/Multivitaminico.avif" class="card-img-top" alt="Multivitamínico Oferta">
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">Multivitamínico - 15% OFF</h5>
           <p class="card-text">Completo para energía diaria</p>
@@ -89,7 +89,7 @@
     <!-- Oferta 3 -->
     <div class="col-md-4">
       <div class="card h-100">
-        <img src="/IMG/Omega3.avif" class="card-img-top" alt="Omega 3 Oferta">
+        <img src="/frontend/IMG/Omega3.avif" class="card-img-top" alt="Omega 3 Oferta">
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">Omega 3 - 10% OFF</h5>
           <p class="card-text">Apoyo cardiovascular y cerebral</p>
@@ -165,13 +165,25 @@
     actualizarContador();
   }
 
-  function agregarAlCarrito(nombre, precio) {
-    const item = carrito.find(x => x.nombre === nombre);
-    if (item) item.cantidad++;
-    else carrito.push({ nombre, precio, cantidad: 1 });
-    actualizarLista();
-    alert(`🛒 ${nombre} agregado al carrito.`);
+// Agregar producto al carrito
+   function agregarAlCarrito(nombre, precio) {
+  const usuario = JSON.parse(localStorage.getItem('usuario'));
+
+  if (!usuario) {
+    alert('⚠️ Debes iniciar sesión para agregar productos al carrito.');
+    return;
   }
+
+  const productoExistente = carrito.find(p => p.nombre === nombre);
+  if (productoExistente) {
+    productoExistente.cantidad++;
+  } else {
+    carrito.push({ nombre, precio, cantidad: 1 });
+  }
+
+  actualizarLista();
+  alert(`🛒 ${nombre} agregado al carrito.`);
+}
 
   function eliminar(idx) {
     carrito.splice(idx, 1);

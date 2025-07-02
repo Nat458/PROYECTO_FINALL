@@ -12,6 +12,7 @@
 - 📊 Elaboramos una **Matriz de Impacto/Esfuerzo** para definir prioridades
 - 📝 Realizamos un **modelado visual** (moockup y wireframe)
 - 💻 Iniciamos la **programación Frontend y Backend**
+<<<<<<< HEAD
 -  Para poder comenzar clonamos el repositorio en nuestro equipo.
     Git clone https://github.com/Nat458/copia_seguridad.git
 ---
@@ -28,6 +29,23 @@
 
 ### 🏠 `index.html`
 
+=======
+
+---
+
+## 🎨 Frontend - BIZCOCHITOS
+
+- 🔧 Entorno: Visual Studio Code
+- 🔧 Entorno: **Github** y **Gitbash**
+- 🧩 Tecnologías: **Bootstrap** y **CSS**
+
+---
+
+## 🌐 Detalles de Páginas Web
+
+### 🏠 `index.html`
+
+>>>>>>> c4609b1176bdf8bf0837c903eac7b8c30921dd06
 -  Utilizamos CSS para la edición de esta pagina web.
 - Creamos un menú para ubicar subcontenidos con nombre: Proteína, Creatinas, Vitaminas y Ofertas.
 - Ubicamos barra de busqueda al inicio-centro de nuestra pagina.
@@ -40,12 +58,20 @@
 
   - 🔚 Para finalizar, agreamos nuestro Footer con 4 secciones:
 
+<<<<<<< HEAD
 
       - **Sección: Atención al cliente**
       - Preguntas Frecuentes
       - Envío y devoluciones
       - Contacto
 
+=======
+      - **Sección: Atención al cliente**
+      - Preguntas Frecuentes
+      - Envío y devoluciones
+      - Contacto
+
+>>>>>>> c4609b1176bdf8bf0837c903eac7b8c30921dd06
       - **Sección: Sobre Nosotros**
       - Nuestra Historia
       - Términos y condiciones
@@ -153,6 +179,54 @@
     - Tiktok.
     - Facebook.
 - Para poder ingresar a nuestra pagina de forma externa a la pagina(solo es de manera visual no funcional.)
+<<<<<<< HEAD
+=======
+
+- 📝 Formularios en contenedor dividido:
+  - **Registro**:
+    - Nombre, correo, contraseña
+    - Mensaje de bienvenida: _¡Hola amig@s!_
+  - **Inicio de sesión**:
+    - Correo, contraseña,botón ingresar
+- © Derechos reservados en la parte de abajo.
+
+---
+
+
+
+## 🎨 Desarrollo Backend - API REST
+
+- Enfoque en el **Teorema CAP**
+- ⚙️Tecnologías: `Express`, `Mongoose`, `MongoDB`, `Docker`
+
+### 📁 Estructura del Proyecto
+- Backend/
+  - Curl/
+    - requestproduct.http
+    - requestuser.http
+  - src/
+    - config/
+      - db.js
+    - controllers/
+      - product.controllers.js
+      - user.controler.js
+    - models/
+      - products.js
+      - user.js
+    - routes/
+      - auth.routes.js
+      - product.routes.js
+      - user.routes.js
+      - app.js
+      - .gitignore
+      - docker-compose.yml
+      - package-lock.json 
+      - package.json
+      - server.js
+  - Readme.md 
+
+
+>>>>>>> c4609b1176bdf8bf0837c903eac7b8c30921dd06
 
 - 📝 Formularios en contenedor dividido:
   - **🌐Registro**:
@@ -215,7 +289,7 @@
       - package.json
       - server.js
   - Readme.md 
-
+----
 ## 🧱 ¿Cómo se creó la API REST?
 
 - 📁 Se comenzó con un **boceto de la estructura de carpetas**.
@@ -276,10 +350,10 @@
     -------
     
 # DATO IMPORTANTE:  - Conexión front+back
-  - ⚙️Tener instalada la extensión Live server (Utilizada para simular un entorno de servicio web-local)
+  - ⚙️ Tener instalada la extensión Live server (Utilizada para simular un entorno de servicio web-local)
   - 🔌 Levantar API REST 
-  - 🧾  Abrir el archivo INDEX.HTML con live server.
-  - ✅  ¡Testear su conexión!.
+  - 🧾 Abrir el archivo INDEX.HTML con live server.
+  - ✅ ¡Testear la conexión!.
 
 
 # 📌 Este flujo asegura una arquitectura clara, probada y funcional, lista para ser consumida por el frontend.
