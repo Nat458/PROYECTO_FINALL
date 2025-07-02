@@ -37,17 +37,17 @@
 - ✅ Sección especial: **"Productos Destacados del Mes"**
   - 4 productos con su imagen respectiva, precio e información.
 
-- 🔚 Para finalizar, agreamos nuestro Footer con 4 secciones:
+  - 🔚 Para finalizar, agreamos nuestro Footer con 4 secciones:
 
- - **Sección: Atención al cliente**
-    - Preguntas Frecuentes
-    - Envío y devoluciones
-    - Contacto
+      - **Sección: Atención al cliente**
+      - Preguntas Frecuentes
+      - Envío y devoluciones
+      - Contacto
 
-  - **Sección: Sobre Nosotros**
-    - Nuestra Historia
-    - Términos y condiciones
-    - Políticas de privacidad
+      - **Sección: Sobre Nosotros**
+      - Nuestra Historia
+      - Términos y condiciones
+      - Políticas de privacidad
 
   - **Sección: Redes Sociales**
     - Logo de Facebook
