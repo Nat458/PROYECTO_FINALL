@@ -1,173 +1,99 @@
-# PROYECTO_FINALL
-PRACTICO FINAL DE MARTINA VIDAL, MATIAS NOVOA, NATALIA MUÑOZ
+# 🎯 PROYECTO FINAL: Bizcochitos
+
+> Proyecto práctico final desarrollado por: **Martina Vidal**, **Matías Novoa** y **Natalia Muñoz**  
+> Tema: Sitio web de **suplementos nutricionales** llamado _Bizcochitos_
 
 ---
 
-## Paso a paso general
+## 🧭 Paso a Paso General
 
-- Elegimos un tema para poder iniciar nuestro proyecto.(Suplementos Nutricionales llamado "Bizcochitos" con productos)
-- Buscamos problemática y soluciones al tema.
-- Hicimos una Matriz Impacto/Esfuerzo para poder localizar en qué nos enfocaríamos para iniciar nuestro proyecto.
-- Creamos modelaje y boceto visual, tanto para pantallas de celulares como PC.
-- Comenzamos con creación de diseño y programación para nuestro sitio web completo (Frontend y Backend).
-
----
-
-## Paso a paso para creación visual de Frontend
-
-- Iniciamos la creación de página con Visual Studio Code.
-- Dato importante: trabajaremos con bootstrap y css.
-------
-
-## Detalles de las páginas web
-
-# index
--  Utilizamos CSS para la edición de esta pagina web.
-- Creamos un menú para ubicar subcontenidos con nombre: Proteína, Creatinas, Vitaminas y Ofertas.
-- Ubicamos barra de busqueda al inicio-centro de nuestra pagina.
-- Ubicamos en el extremo derecho carrito de compras y un usuario.
-- Agregamos productos a la página web según requiera cada ítem.
-- Agregamos botones para poder agregarlos al carrito.
-
-**AGREGAMOS UNA SECCIÓN**
-   - Le pondremos por nombre a la sección "PRODUCTOS DESTACADOS DEL MES"
-   - Agregaremos 4 productos con su imagen respectiva, precio e infomacion correspondiente.
-   --------
-
-- Para finalizar, agregamos nuestro `footer-content` con 4 secciones con contenido (pie de página):
-
-  - **Sección: Atención al cliente**
-    - Preguntas Frecuentes
-    - Envío y devoluciones
-    - Contacto
-
-  - **Sección: Sobre Nosotros**
-    - Nuestra Historia
-    - Términos y condiciones
-    - Políticas de privacidad
-
-  - **Sección: Redes Sociales**
-    - Logo de Facebook
-    - Logo de Instagram
-    - Logo de Twitter
-
-  - **Sección: Suscripción**
-    - Barra de correo
+- ✅ Elegimos el tema del proyecto: **Suplementos nutricionales**
+- 🔍 Detectamos la **problemática y posibles soluciones**
+- 📊 Elaboramos una **Matriz de Impacto/Esfuerzo** para definir prioridades
+- 📝 Realizamos un **modelado visual** (celular y PC)
+- 💻 Iniciamos la **programación Frontend y Backend**
 
 ---
 
-# vitaminas
-- Utilizamos Bootstrap para la edición de esta pagina web
-- Se implemento un contenedor para el logo, menu de navegación con sus respectivos enlaces.
-- Ubicamos en el extremo derecho menú de navegacion que contiene:
-    - carrito de compras.
-    - Proteinaas
-    - Ofertas
-    - Creatinas.
-    - barra de busqueda.
-    - Y se destaca sección (Vitaminas) para señalarnos en que lugar nos ubicamos.
+## 🎨 Desarrollo Frontend
 
-**AGREGAMOS UNA SECCIÓN**
-  - Le pondremos por nombre a la sección "VITAMINAS"
-   - Agregaremos 6 productos con su imagen respectiva, precio e        infomacion correspondiente.
-   -------
-- Ubicaremos al termino de nuestra pagina creditos del autor.
-   - 2024 Bizcochitos. Todos los derechos reservados.
-----------
+- 🔧 Entorno: Visual Studio Code
+- 🧩 Tecnologías: **Bootstrap** y **CSS**
 
-# OFERTAS
--Utilizamos Bootstrap para la edición de esta pagina web
-- Se implemento un contenedor para el logo, menu de navegación con sus respectivos enlaces.
-- Ubicamos en el extremo derecho menú de navegacion que contiene:
-    - carrito de compras.
-    - Proteinas.
-    - vitaminas.
-    - Creatinas.
-    - barra de busqueda.
-    - Y se destaca sección (ofertas) para señalarnos en que lugar nos ubicamos.
+---
 
-**AGREGAMOS UNA SECCIÓN**
-  - Le pondremos por nombre a la sección "ofertas especiales"
-   - Agregaremos 3 productos con su imagen respectiva, precio actual y precio con la oferta y su infomacion correspondiente.
-  ----
-- Ubicaremos al termino de nuestra pagina creditos del autor.
-   - 2024 Bizcochitos. Todos los derechos reservados.
+## 🌐 Detalles de Páginas Web
 
-------
+### 🏠 `index.html`
 
-# PROTEINAS
-- Utilizamos Bootstrap para la edición de esta pagina web
-- Se implemento un contenedor para el logo, menu de navegación con sus respectivos enlaces.
-- Ubicamos en el extremo derecho menú de navegacion que contiene:
-    - carrito de compras.
-    - ofertas.
-    - vitaminas.
-    - Creatinas.
-    - barra de busqueda.
-    - Y se destaca sección (proteinas) para señalarnos en que lugar nos ubicamos.
+- Menú con secciones: Proteína | Creatinas | Vitaminas | Ofertas
+- Barra de búsqueda y botones de carrito + usuario
+- Lista de productos por ítem
+- ✅ Sección especial: **"Productos Destacados del Mes"**
+  - 4 productos con imagen, precio e info
+- 🔚 Footer con 4 secciones:
+  - Atención al Cliente
+  - Sobre Nosotros
+  - Redes Sociales
+  - Suscripción (correo)
 
-**AGREGAMOS UNA SECCIÓN**
-  - Le pondremos por nombre a la sección "ofertas especiales"
-   - Agregaremos 3 productos con su imagen respectiva, precio actual y su infomacion correspondiente.
-   -------
-- Ubicaremos al termino de nuestra pagina creditos del autor.
-   - 2024 Bizcochitos. Todos los derechos reservados.
+---
 
--------
+### 💊 `vitaminas.html`
 
-# CREATINAS
+- Navbar con logo, búsqueda, carrito y navegación
+- Sección destacada: **"VITAMINAS"**
+  - 6 productos con imagen, precio e info
+- © 2024 Bizcochitos. Todos los derechos reservados.
 
-- Utilizamos Bootstrap para la edición de esta pagina web
-- Se implemento un contenedor para el logo, menu de navegación con sus respectivos enlaces.
-- Ubicamos en el extremo derecho menú de navegacion que contiene:
-    - carrito de compras.
-    - Proteinas.
-    - vitaminas.
-    - ofertas.
-    - barra de busqueda.
-    - Y se destaca sección (creatinas) para señalarnos en que lugar nos ubicamos.
+---
 
-**AGREGAMOS UNA SECCIÓN**
-  - Le pondremos por nombre a la sección "creatinas"
-   - Agregaremos 6 productos con su imagen respectiva, precio actual y su infomacion correspondiente.
-   -------
-- Ubicaremos al termino de nuestra pagina creditos del autor.
-   - 2024 Bizcochitos. Todos los derechos reservados.
+### 🔥 `ofertas.html`
 
-------
+- Navbar con enlaces y barra de búsqueda
+- Sección destacada: **"Ofertas Especiales"**
+  - 3 productos con precio original y con oferta
+- © 2024 Bizcochitos. Todos los derechos reservados.
+
+---
+
+### 💪 `proteinas.html`
+
+- Navbar con enlaces
+- Sección destacada: **"Proteínas"**
+  - 3 productos con imagen, precio e info
+- © 2024 Bizcochitos. Todos los derechos reservados.
+
+---
+
+### ⚡ `creatinas.html`
+
+- Navbar con enlaces
+- Sección destacada: **"Creatinas"**
+  - 6 productos con imagen, precio e info
+- © 2024 Bizcochitos. Todos los derechos reservados.
+
+---
+
+### 👤 `usuarios.html`
+
+- Redes sociales: Instagram, TikTok, Facebook (visual)
+- 📝 Formularios en contenedor dividido:
+  - **Registro**:
+    - Nombre, correo, contraseña
+    - Mensaje de bienvenida: _¡Hola amig@s!_
+  - **Inicio de sesión**:
+    - Correo, contraseña, recuperación, botón ingresar
+- © Derechos reservados en la parte superior
+
+---
+
+## ⚙️ Backend - Express + MongoDB + Docker
+
+- Enfoque en el **Teorema CAP**
+- Tecnologías: `Express`, `Mongoose`, `MongoDB`, `Docker`
+
+### 📁 Estructura del Proyecto
 
 
-# USUARIOS
-- se creó el archivo HTML con nombre Usuario.html
-- Utilizamos Bootstrap para la edición de esta pagina web.
-- Agregamos botones con logos de paginas como: 
-    - Instagram.
-    - Tiktok.
-    - Facebook.
-- para poder ingresar a nuestra pagina de forma externa a la pagina(solo es de manera visual no funcional.)
-------
-- Se crearón 2 secciones en un contenedor
-    - Formulario de registro.
-    - Formulario de inicio de sesión.
-- Formulario de inicio de sesión
-    - En esta parte de la sección pediremos los siguientes datos:
-      - Correo Electronico.
-      - Contraseña.
-      - Opción para recuperación de contraseña.
-      - Boton para poder ingresar.
------------
-**Formulario de registro**
-  - En esta parte de la sección pediremos los siguientes datos:
-    - Tendremos un subtitulo con información como:
-       - !Hola, amig@s¡
-       - Ingrese sus datos personales y comienza el viaje con nosotros.
-  - Boton para poder registrarse.
-    - Al apretar el boton registrarse te redigidira a otro bosque donde te permitira incribirse con los siguientes requerimientos:
-      - Nombre
-      - Correo electrónico.
-      - contraseña.
-   y estarias con un registro exitoso!!
-   - Y para dar por finalizado en la parte superior estan los derechos del autor
-   
----------------------
 
