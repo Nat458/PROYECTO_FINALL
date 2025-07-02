@@ -3,7 +3,7 @@
 > Proyecto práctico final desarrollado por: **Martina Vidal**, **Matías Novoa** y **Natalia Muñoz**  
 > Tema: Sitio web de **suplementos nutricionales** llamado _Bizcochitos_
 
----
+--
 
 ## 🧭 Paso a Paso General
 
@@ -12,9 +12,6 @@
 - 📊 Elaboramos una **Matriz de Impacto/Esfuerzo** para definir prioridades
 - 📝 Realizamos un **modelado visual** (moockup y wireframe)
 - 💻 Iniciamos la **programación Frontend y Backend**
-<<<<<<< HEAD
--  Para poder comenzar clonamos el repositorio en nuestro equipo.
-    Git clone https://github.com/Nat458/copia_seguridad.git
 ---
 
 ## 🎨 Frontend - BIZCOCHITOS
@@ -22,30 +19,11 @@
 - 🔧 Entorno: Visual Studio Code
 - 🔧 Entorno: **Github** y **Gitbash**
 - 🧩 Tecnologías: **Bootstrap** y **CSS**
-
 ---
 
 ## 🌐 Detalles de Páginas Web
 
 ### 🏠 `index.html`
-
-=======
-
----
-
-## 🎨 Frontend - BIZCOCHITOS
-
-- 🔧 Entorno: Visual Studio Code
-- 🔧 Entorno: **Github** y **Gitbash**
-- 🧩 Tecnologías: **Bootstrap** y **CSS**
-
----
-
-## 🌐 Detalles de Páginas Web
-
-### 🏠 `index.html`
-
->>>>>>> c4609b1176bdf8bf0837c903eac7b8c30921dd06
 -  Utilizamos CSS para la edición de esta pagina web.
 - Creamos un menú para ubicar subcontenidos con nombre: Proteína, Creatinas, Vitaminas y Ofertas.
 - Ubicamos barra de busqueda al inicio-centro de nuestra pagina.
@@ -58,20 +36,14 @@
 
   - 🔚 Para finalizar, agreamos nuestro Footer con 4 secciones:
 
-<<<<<<< HEAD
-
       - **Sección: Atención al cliente**
       - Preguntas Frecuentes
       - Envío y devoluciones
       - Contacto
-
-=======
       - **Sección: Atención al cliente**
       - Preguntas Frecuentes
       - Envío y devoluciones
       - Contacto
-
->>>>>>> c4609b1176bdf8bf0837c903eac7b8c30921dd06
       - **Sección: Sobre Nosotros**
       - Nuestra Historia
       - Términos y condiciones
@@ -179,8 +151,6 @@
     - Tiktok.
     - Facebook.
 - Para poder ingresar a nuestra pagina de forma externa a la pagina(solo es de manera visual no funcional.)
-<<<<<<< HEAD
-=======
 
 - 📝 Formularios en contenedor dividido:
   - **Registro**:
@@ -226,8 +196,6 @@
   - Readme.md 
 
 
->>>>>>> c4609b1176bdf8bf0837c903eac7b8c30921dd06
-
 - 📝 Formularios en contenedor dividido:
   - **🌐Registro**:
     - Nombre, correo, contraseña
@@ -237,7 +205,6 @@
 - © Derechos reservados en la parte de abajo.
 
 ---
-
 
 
 ## 🎨 Backend para gestión de datos de **suplementos nutricionales**
