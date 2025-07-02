@@ -1,0 +1,33 @@
+### CREAR PRODUCTO POR TOKEN ###
+
+POST http://localhost:3000/api/product
+            
+
+Content-Type: application/json
+
+{
+  "nombre": "Creatina 300g",
+  "categoria": "creatina",
+  "descripcion": "Creatina monohidratada premium",
+  "precio": 15000,
+  "stock": 20,
+  "imagenUrl": "https://example.com/creatina.jpg"
+}
+
+### OBTENER TODOS LOS PRODUCTOS ###
+
+GET http://localhost:3000/api/product
+
+### Borrar un PRODUCTO por ID
+
+DELETE http://localhost:3000/api/product/68633e02c62f6fa4d3788050
+
+
+### Activar un PRODUCTO por ID
+
+PATCH http://localhost:3000/api/product/<ID>/activate
+
+
+### Desactivar un PRODUCTO por ID
+
+PATCH http://localhost:3000/api/product/<ID>/deactivate 
